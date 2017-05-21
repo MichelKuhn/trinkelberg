@@ -1,6 +1,7 @@
 package com.example.michel.trinkelberg;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Round {
     private ArrayList<Player> players;
@@ -11,22 +12,34 @@ public class Round {
         this.cards = cards;
     }
 
+    //Nicht immer, manchmal sucht der Zufall auch den Spieler aus
     private Player findMostSoberPlayer() {
-        int drunkCount = 0;
-        Player returnPlayer = players.get(2);
-        for (Player player : players) {
-            int playerDrunkCount = player.getSips() + player.getGlasses() * 4;
+        Player returnPlayer = players.get(new Random().nextInt(players.size()));
+        if(new Random().nextInt(players.size()) != 1)  {
+            int drunkCount = 0;
+            for (Player player : players) {
+                int playerDrunkCount = player.getSips() + player.getGlasses() * 4;
 
-            if(playerDrunkCount > drunkCount) {
-                drunkCount = playerDrunkCount;
-                returnPlayer = player;
+                if(playerDrunkCount > drunkCount) {
+                    drunkCount = playerDrunkCount;
+                    returnPlayer = player;
+                }
             }
         }
         return returnPlayer;
     }
 
+    private void end() {
+        //TODO
+    }
+
     public void drawCard() {
-        Card card = cards.get(1);
+        if(cards.isEmpty()) {
+            end();
+        }
+        int randomCardNumber = new Random().nextInt(cards.size());
+        Card card = cards.get(randomCardNumber);
         card.playCard(findMostSoberPlayer());
+        this.cards.remove(randomCardNumber);
     }
 }

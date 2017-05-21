@@ -2,33 +2,33 @@ package com.example.michel.trinkelberg;
 
 import java.util.ArrayList;
 
-public class Card {
+class Card {
     private String text;
     private int sips;
     private boolean glass;
     private boolean virus;
     private boolean cure;
-    private ArrayList<String> attributes;
+    private ArrayList<Option> options;
 
-    public Card(String text, int sips, boolean glass, boolean virus, boolean cure, ArrayList<String> attributes) {
+    public Card(String text, int sips, boolean glass, boolean virus, boolean cure, ArrayList<Option> options) {
         this.text = text;
         this.sips = sips;
         this.glass = glass;
         this.virus = virus;
         this.cure = cure;
-        this.attributes = attributes;
+        this.options = options;
     }
 
-    public boolean checkAttributes(ArrayList<String> allowedAttributes) {
-        for (String attribute : this.attributes) {
-            if(!allowedAttributes.contains(attribute)) {
+    boolean checkOptions(ArrayList<Option> allowedOptions) {
+        for (Option option : this.options) {
+            if(!allowedOptions.contains(option)) {
                 return false;
             }
         }
         return true;
     }
 
-    public String playCard(Player player) {
+    String playCard(Player player) {
         player.addSips(this.sips);
         if(this.glass) { player.addGlass(); }
         if(this.virus) {
