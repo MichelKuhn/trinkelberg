@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="card1">
+        <item name="text"></item>
+        <item name="social"></item>
+        <item name="nsfw"></item>
+        <item name="hetero"></item>
+    </array>
+</resources>
