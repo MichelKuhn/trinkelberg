@@ -3,13 +3,13 @@ package com.example.michel.trinkelberg;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Round {
+class Round {
     private ArrayList<Player> players;
     private ArrayList<Card> cards;
 
-    public Round(ArrayList<Player> players, ArrayList<Card> cards) {
+    Round(ArrayList<Player> players) {
         this.players = players;
-        this.cards = cards;
+        this.cards = DeckFactory.createDeck(new ArrayList<Option>());
     }
 
     //Nicht immer, manchmal sucht der Zufall auch den Spieler aus
@@ -33,13 +33,13 @@ public class Round {
         //TODO
     }
 
-    public void drawCard() {
+    String drawCard() {
         if(cards.isEmpty()) {
             end();
         }
         int randomCardNumber = new Random().nextInt(cards.size());
         Card card = cards.get(randomCardNumber);
-        card.playCard(findMostSoberPlayer());
         this.cards.remove(randomCardNumber);
+        return card.playCard(findMostSoberPlayer());
     }
 }

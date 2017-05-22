@@ -1,6 +1,7 @@
 package com.example.michel.trinkelberg;
 
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 class Card {
     private String text;
@@ -10,7 +11,7 @@ class Card {
     private boolean cure;
     private ArrayList<Option> options;
 
-    public Card(String text, int sips, boolean glass, boolean virus, boolean cure, ArrayList<Option> options) {
+    Card(String text, int sips, boolean glass, boolean virus, boolean cure, ArrayList<Option> options) {
         this.text = text;
         this.sips = sips;
         this.glass = glass;
@@ -37,6 +38,8 @@ class Card {
             player.cure();
         }
 
-        return this.text + player.getName();
+        return this.text.replaceAll(Pattern.quote("$$"), player.getName());
+
+
     }
 }
