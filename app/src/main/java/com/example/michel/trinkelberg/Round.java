@@ -16,7 +16,7 @@ class Round {
     //Nicht immer, manchmal sucht der Zufall auch den Spieler aus
     private Player findMostSoberPlayer() {
         Player returnPlayer = players.get(new Random().nextInt(players.size()));
-        if(new Random().nextInt(players.size()) != 1)  {
+        if(new Random().nextInt(players.size() + 3) != 1)  {
             int drunkCount = 0;
             for (Player player : players) {
                 int playerDrunkCount = player.getSips() + player.getGlasses() * 4;
