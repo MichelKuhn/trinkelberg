@@ -7,9 +7,10 @@ class Round {
     private ArrayList<Player> players;
     private ArrayList<Card> cards;
 
-    Round(ArrayList<Player> players) {
+    Round(ArrayList<Player> players, ArrayList<Option> options) {
         this.players = players;
-        this.cards = DeckFactory.createDeck(new ArrayList<Option>());
+        DeckFactory df = new DeckFactory(options);
+        this.cards = df.createDeck();
     }
 
     //Nicht immer, manchmal sucht der Zufall auch den Spieler aus
@@ -29,13 +30,9 @@ class Round {
         return returnPlayer;
     }
 
-    private void end() {
-        //TODO
-    }
-
     String drawCard() {
         if(cards.isEmpty()) {
-            end();
+            return "Alle Karten verbraucht";
         }
         int randomCardNumber = new Random().nextInt(cards.size());
         Card card = cards.get(randomCardNumber);

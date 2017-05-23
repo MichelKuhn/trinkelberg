@@ -2,4 +2,8 @@
     <string name="app_name">trinkelberg</string>
     <string name="next">Nächstes</string>
     <string name="title_activity_menu">Menu</string>
+    <string name="addPlayer">Spieler hinzufügen</string>
+    <string name="start">Start</string>
+    <string name="startTwo">Start (Jetzt wirklich)</string>
+    <string name="nextCard">Nächste</string>
 </resources>

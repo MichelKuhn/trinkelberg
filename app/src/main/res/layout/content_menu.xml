@@ -15,19 +15,22 @@
         android:layout_marginTop="8dp"
         android:text="ToggleButton"
         app:layout_constraintTop_toBottomOf="@+id/nsfwButton"
-        tools:layout_editor_absoluteX="148dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/hetero"
         android:layout_width="106dp"
         android:layout_height="47dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="Gemischt"
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintRight_toLeftOf="@+id/socialButton"
-        app:layout_constraintTop_toBottomOf="@+id/NSFW" />
+        app:layout_constraintRight_toLeftOf="@+id/heteroButton"
+        app:layout_constraintTop_toBottomOf="@+id/NSFW"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <ToggleButton
         android:id="@+id/nsfwButton"
@@ -36,19 +39,22 @@
         android:layout_marginTop="8dp"
         android:text="ToggleButton"
         app:layout_constraintTop_toBottomOf="@+id/socialButton"
-        tools:layout_editor_absoluteX="148dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/NSFW"
         android:layout_width="106dp"
         android:layout_height="47dp"
-        android:layout_marginRight="26dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:text="NSFW"
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintRight_toLeftOf="@+id/socialButton"
-        app:layout_constraintTop_toBottomOf="@+id/social" />
+        app:layout_constraintRight_toLeftOf="@+id/nsfwButton"
+        app:layout_constraintTop_toBottomOf="@+id/social"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <ToggleButton
         android:id="@+id/socialButton"
@@ -56,18 +62,21 @@
         android:layout_height="wrap_content"
         android:text="ToggleButton"
         tools:layout_editor_absoluteY="28dp"
-        tools:layout_editor_absoluteX="148dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/social"
         android:layout_width="106dp"
         android:layout_height="47dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginRight="8dp"
         android:text="Social Media"
         android:textAlignment="textStart"
         android:textStyle="bold"
         app:layout_constraintRight_toLeftOf="@+id/socialButton"
-        tools:layout_editor_absoluteY="39dp" />
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/back"
@@ -76,7 +85,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:text="Zurück"
+        android:text="@string/startTwo"
+        android:onClick="onStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

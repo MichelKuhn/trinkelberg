@@ -7,7 +7,7 @@
 
     <Button
         android:id="@+id/addBtn"
-        android:text="Add New Item"
+        android:text="@string/addPlayer"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:onClick="addItems"/>
@@ -26,15 +26,10 @@
         android:drawSelectorOnTop="false"/>
 
     <Button
-        android:id="@+id/options"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Optionen" />
-
-    <Button
         android:id="@+id/start"
+        android:onClick="onStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start" />
+        android:text="@string/start" />
 
 </LinearLayout>
