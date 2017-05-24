@@ -35,7 +35,7 @@ public class Game extends AppCompatActivity {
             }
         }
 
-        round = new Round(players, options);
+        round = new Round(getApplicationContext(), players, options);
         TextView textView = (TextView)findViewById(R.id.cardView);
         textView.setTextSize(32);
         textView.setText(round.drawCard());

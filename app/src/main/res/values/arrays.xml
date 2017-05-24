@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="socialMediaTemplates">
+        <item>$$ postet einen Facebookstatus mit den Worten "[W1]", "[W2]" und "[W3]" oder trinkt sein Glas aus.</item>
+        <item>$$ schreibt eine Whatsappnachricht mit den Worten "[W1]", "[W2]" und "[W3]" oder trinkt sein Glas aus.</item>
+    </string-array>
+
+    <string-array name="socialMedia">
+        <item>Delphine</item>
+        <item>Kleber</item>
+        <item>Säge</item>
+        <item>Waschmaschine</item>
+        <item>Teelöffel</item>
+        <item>Krater</item>
+        <item>Backstage</item>
+        <item>Nasenhaare</item>
+        <item>Tennis</item>
+        <item>Alpen</item>
+        <item>Zauberer</item>
+        <item>Klavier</item>
+        <item>Verschwindetrick</item>
+    </string-array>
+
+    <string-array name="socialMediaNsfw">
+        <item>Kot</item>
+        <item>Penis</item>
+        <item>Osama</item>
+        <item>Kotbrot</item>
+        <item>Vorhaut</item>
+        <item>Prostitution</item>
+        <item>Drogen</item>
+        <item>Kokain</item>
+        <item>Kondom</item>
+    </string-array>
+
+    <string-array name="screamMe">
+        <item>Prost!</item>
+        <item>Akk!</item>
+        <item>Alkohol!</item>
+        <item>Boi!</item>
+        <item>Geilo!</item>
+        <item>Bamm!</item>
+        <item>Saufen!</item>
+        <item>FRANK HEMD!</item>
+        <item>Dude!</item>
+        <item>YAHOOO!</item>
+    </string-array>
+
+    <string-array name="screamMeNsfw">
+        <item>Fotze!</item>
+        <item>Penis!</item>
+        <item>Nuttöh!</item>
+        <item>Nigga!</item>
+        <item>Schwanz!</item>
+        <item>Ficken!</item>
+        <item>Arschloch!</item>
+    </string-array>
+
+    <string-array name="groups">
+        <item>Studenten</item>
+        <item>Bartträger</item>
+        <item>Hoodieträger</item>
+        <item>Gittaristen</item>
+        <item>Ortsansässigen</item>
+        <item>Azubis</item>
+        <item>Schüler</item>
+    </string-array>
+
+    <string-array name="groupsNsfw">
+        <item>Kiffer</item>
+        <item>Schwulen</item>
+        <item>Speedfreaks</item>
+        <item>LSD-Fans</item>
+    </string-array>
+
+    <string-array name="threeQuoteChallenge">
+        <item>Queen Song singen</item>
+        <item>Nirvana Song singen</item>
+        <item>Kraftklub Song singen</item>
+        <item>Schlager Song singen</item>
+        <item>Eminem Song rappen</item>
+        <item>KIZ Song rappen</item>
+        <item>Alligatoah Song rappen</item>
+        <item>Trailerpark Song rappen</item>
+        <item>Goethe Gedicht vortragen</item>
+        <item>Schiller Gedicht vortragen</item>
+    </string-array>
+
+    <string-array name="didStuffToday">
+        <item>Facebook gecheckt</item>
+        <item>Cola getrunken</item>
+        <item>geraucht</item>
+        <item>Kaffee getrunken</item>
+        <item>Red Bull getrunken</item>
+        <item>Fanta getrunken</item>
+        <item>Sprite getrunken</item>
+    </string-array>
+
+    <string-array name="didStuffTodayNsfw">
+        <item>gekifft</item>
+        <item>masturbiert</item>
+        <item>gefurzt</item>
+    </string-array>
+
+    <string-array name="nameFour">
+        <item>Billy Talent Songs</item>
+        <item>Nirvana Songs</item>
+        <item>Led Zeppelin Songs</item>
+        <item>Futurama Charaktere</item>
+        <item>Walking Dead Charaktere</item>
+        <item>Game of Thrones Charaktere</item>
+        <item>South Park Charaktere</item>
+        <item>Green Day Songs</item>
+    </string-array>
+
+    <string-array name="nameFourNsfw">
+        <item>Pornokategorien</item>
+        <item>Pornodarstellerinnen</item>
+    </string-array>
+
+    <string-array name="noLike">
+        <item>kein Bier</item>
+        <item>keinen Wein</item>
+        <item>keinen Whiskey</item>
+        <item>keinen Sekt</item>
+        <item>keinen Vodka</item>
+    </string-array>
+
+    <string-array name="noLikeNsfw">
+        <item>kein Kokain</item>
+        <item>kein Gras</item>
+        <item>kein LSD</item>
+    </string-array>
+
+    <string-array name="splitFour">
+        <item>Personen ohne Bart</item>
+        <item>Personen mit Bart</item>
+        <item>blonden Personen</item>
+        <item>nicht blonden Personen</item>
+        <item>Personen mit Kopfbedeckung</item>
+        <item>Personen mit Brille</item>
+    </string-array>
+</resources>
