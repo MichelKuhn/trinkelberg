@@ -19,7 +19,7 @@ class Round {
         if(new Random().nextInt(players.size() + 3) != 1)  {
             int drunkCount = 0;
             for (Player player : players) {
-                int playerDrunkCount = player.getSips() + player.getGlasses() * 4;
+                int playerDrunkCount = player.getSips();
 
                 if(playerDrunkCount > drunkCount) {
                     drunkCount = playerDrunkCount;

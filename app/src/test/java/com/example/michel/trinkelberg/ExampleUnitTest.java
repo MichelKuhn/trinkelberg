@@ -15,8 +15,9 @@ public class ExampleUnitTest {
     @Test
     public void karte() {
         ArrayList<Player> players = new ArrayList<>();
+        ArrayList<Option> options = new ArrayList<>();
         players.add(new Player("Michel"));
-        Round round = new Round(players);
+        Round round = new Round(players, options);
         assertEquals("test", round.drawCard());
     }
 }
