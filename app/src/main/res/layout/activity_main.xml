@@ -12,6 +12,13 @@
         android:layout_height="wrap_content"
         android:onClick="addItems"/>
 
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStart"
+        android:text="@string/start" />
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
@@ -24,12 +31,5 @@
         android:layout_width="fill_parent"
         android:layout_height="313dp"
         android:drawSelectorOnTop="false"/>
-
-    <Button
-        android:id="@+id/start"
-        android:onClick="onStart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/start" />
 
 </LinearLayout>

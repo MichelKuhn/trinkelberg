@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 public class MainActivity extends AppCompatActivity {
     ArrayList<String> players=new ArrayList<>();
 
+    Button startButton;
     ArrayAdapter<String> adapter;
 
     @Override
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 players);
         ListView lv = (ListView)findViewById(R.id.listView);
         lv.setAdapter(adapter);
+        startButton = (Button)findViewById(R.id.start);
+        startButton.setEnabled(false);
     }
 
     public void addItems(View v) {
@@ -35,9 +39,8 @@ public class MainActivity extends AppCompatActivity {
         players.add(tv.getText().toString());
         adapter.notifyDataSetChanged();
         tv.setText("");
+        startButton.setEnabled(true);
 
-        InputMethodManager inputManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
     public void onStart(View view) {
