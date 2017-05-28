@@ -19,6 +19,11 @@
         <item>Zauberer</item>
         <item>Klavier</item>
         <item>Verschwindetrick</item>
+        <item>Trinkelberg</item>
+        <item>Parkplatz</item>
+        <item>Magier</item>
+        <item>Handtuch</item>
+        <item>Schnürsenkel</item>
     </string-array>
 
     <string-array name="socialMediaNsfw">
@@ -44,6 +49,8 @@
         <item>FRANK HEMD!</item>
         <item>Dude!</item>
         <item>YAHOOO!</item>
+        <item>Jawohl!</item>
+        <item>Whooooo!</item>
     </string-array>
 
     <string-array name="screamMeNsfw">

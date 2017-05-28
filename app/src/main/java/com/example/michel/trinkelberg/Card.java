@@ -5,16 +5,12 @@ import java.util.regex.Pattern;
 
 class Card {
     private String text;
-    private int sips;
-    private boolean virus;
-    private boolean cure;
+    private int roundsFree;
     private ArrayList<Option> options;
 
-    Card(String text, int sips, boolean virus, boolean cure, ArrayList<Option> options) {
+    Card(String text, int roundsFree, ArrayList<Option> options) {
         this.text = text;
-        this.sips = sips;
-        this.virus = virus;
-        this.cure = cure;
+        this.roundsFree = roundsFree;
         this.options = options;
     }
 
@@ -28,12 +24,7 @@ class Card {
     }
 
     String playCard(Player player) {
-        player.addSips(this.sips);
-        if(this.virus) {
-            player.infect();
-        } else if (this.cure) {
-            player.cure();
-        }
+        player.setRoundsFree(player.getRoundsFree() + roundsFree);
 
         return this.text.replaceAll(Pattern.quote("$$"), player.getName());
     }

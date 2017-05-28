@@ -2,36 +2,25 @@ package com.example.michel.trinkelberg;
 
 class Player {
     private String name;
-    private int sips;
-    private boolean virus;
+    private int roundsFree;
 
     Player(String name) {
         this.name = name;
-        this.sips = 0;
-        this.virus = false;
+        this.roundsFree = 0;
     }
 
     String getName() {
         return name;
     }
 
-    int getSips() {
-        return sips;
+    int getRoundsFree() {
+        return roundsFree;
     }
 
-    public boolean isVirus() {
-        return virus;
-    }
-
-    void addSips(int amount) {
-        this.sips += amount;
-    }
-
-    void infect() {
-        this.virus = true;
-    }
-
-    void cure() {
-        this.virus = false;
+    void setRoundsFree(int amount) {
+        this.roundsFree = amount;
+        if(this.roundsFree < 0) {
+            this.roundsFree = 0;
+        }
     }
 }

@@ -16,18 +16,15 @@ class Round {
         this.cards = df.createDeck();
     }
 
-    private Player findMostSoberPlayer() {
-        Player returnPlayer = players.get(new Random().nextInt(players.size()));
-        int drunkCount = 0;
-        for (Player player : players) {
-            int playerDrunkCount = player.getSips();
-
-            if(playerDrunkCount <= drunkCount) {
-                drunkCount = playerDrunkCount;
-                returnPlayer = player;
+    private Player choosePlayer() {
+        ArrayList<Player> playersToChooseFrom = new ArrayList<>();
+        for (Player player : this.players) {
+            if(player.getRoundsFree() == 0) {
+                playersToChooseFrom.add(player);
             }
         }
-        return returnPlayer;
+
+        return playersToChooseFrom.get(new Random().nextInt(playersToChooseFrom.size()));
     }
 
     String drawCard() {
@@ -35,6 +32,6 @@ class Round {
             return "Alle Karten verbraucht.";
         }
         int randomCardNumber = new Random().nextInt(cards.size());
-        return this.cards.remove(randomCardNumber).playCard(findMostSoberPlayer());
+        return this.cards.remove(randomCardNumber).playCard(choosePlayer());
     }
 }
