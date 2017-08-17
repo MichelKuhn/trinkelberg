@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="socialMediaTemplates">
-        <item>$$ postet einen Facebookstatus mit den Worten "[W1]", "[W2]" und "[W3]" oder trinkt sein Glas aus.</item>
-        <item>$$ schreibt eine Whatsappnachricht mit den Worten "[W1]", "[W2]" und "[W3]" oder trinkt sein Glas aus.</item>
+        <item>$$ postet einen Facebookstatus mit den Worten "[W1]", "[W2]" und "[W3]" oder trinkt aus.</item>
+        <item>$$ schreibt eine Whatsappnachricht mit den Worten "[W1]", "[W2]" und "[W3]" oder trinkt aus.</item>
     </string-array>
 
     <string-array name="socialMedia">
@@ -19,11 +19,9 @@
         <item>Zauberer</item>
         <item>Klavier</item>
         <item>Verschwindetrick</item>
+        <item>Pferdekopf</item>
         <item>Trinkelberg</item>
-        <item>Parkplatz</item>
-        <item>Magier</item>
-        <item>Handtuch</item>
-        <item>Schnürsenkel</item>
+        <item>Dinkelberg</item>
     </string-array>
 
     <string-array name="socialMediaNsfw">
@@ -36,6 +34,14 @@
         <item>Drogen</item>
         <item>Kokain</item>
         <item>Kondom</item>
+        <item>Abtreibung</item>
+    </string-array>
+
+    <string-array name="scremMeTemplates">
+        <item>$$ trinkt einen Schluck und schreit dann [W1]</item>
+        <item>$$ trinkt zwei Schlücke und schreit dann [W1]</item>
+        <item>Die Person links von $$ trinkt zwei Schlücke und schreit dann [W1]</item>
+        <item>Die Person rechts von $$ trinkt zwei Schlücke und schreit dann [W1]</item>
     </string-array>
 
     <string-array name="screamMe">
@@ -49,8 +55,8 @@
         <item>FRANK HEMD!</item>
         <item>Dude!</item>
         <item>YAHOOO!</item>
-        <item>Jawohl!</item>
-        <item>Whooooo!</item>
+        <item>PICKLE RICK!</item>
+        <item>Haaaaaallo!</item>
     </string-array>
 
     <string-array name="screamMeNsfw">
@@ -63,14 +69,25 @@
         <item>Arschloch!</item>
     </string-array>
 
+    <string-array name="groupsTemplates">
+        <item>Alle [W1] genehmigen sich einen Schluck.</item>
+        <item>Alle [W1] genehmigen sich zwei Schlücke.</item>
+        <item>$$ verteilt zwei Schlücke an alle [W1].</item>
+        <item>$$ verteilt drei Schlücke an alle [W1].</item>
+        <item>$$ verteilt vier Schlücke an alle [W1].</item>
+    </string-array>
+
     <string-array name="groups">
         <item>Studenten</item>
         <item>Bartträger</item>
+        <item>Brillenträger</item>
         <item>Hoodieträger</item>
         <item>Gittaristen</item>
         <item>Ortsansässigen</item>
         <item>Azubis</item>
         <item>Schüler</item>
+        <item>Hip-Hop Fans</item>
+        <item>Hemdträger</item>
     </string-array>
 
     <string-array name="groupsNsfw">
@@ -80,17 +97,33 @@
         <item>LSD-Fans</item>
     </string-array>
 
+    <string-array name="threeQuoteChallengeTemplates">
+        <item>$$ muss drei Zeilen aus einem [W1] oder austrinken.</item>
+        <item>$$ muss drei Zeilen aus einem [W1] oder drei Schlücke trinken.</item>
+        <item>$$ verteilt drei Schlücke, wenn er drei Zeilen aus einem [W1] kann.</item>
+        <item>$$ verteilt vier Schlücke, wenn er drei Zeilen aus einem [W1] kann.</item>
+        <item>$$ verteilt fünf Schlücke, wenn er drei Zeilen aus einem [W1] kann.</item>
+    </string-array>
+
     <string-array name="threeQuoteChallenge">
         <item>Queen Song singen</item>
         <item>Nirvana Song singen</item>
         <item>Kraftklub Song singen</item>
         <item>Schlager Song singen</item>
         <item>Eminem Song rappen</item>
-        <item>KIZ Song rappen</item>
         <item>Alligatoah Song rappen</item>
-        <item>Trailerpark Song rappen</item>
         <item>Goethe Gedicht vortragen</item>
         <item>Schiller Gedicht vortragen</item>
+    </string-array>
+
+    <string-array name="threeQuoteChallengeNSFW">
+        <item>Trailerpark Song rappen</item>
+        <item>KIZ Song rappen</item>
+    </string-array>
+
+    <string-array name="didStuffTodayTemplates">
+        <item>Wer heute schon [W1] hat, trinkt einen Schluck.</item>
+        <item>Wer heute schon [W1] hat, trinkt zwei Schlücke.</item>
     </string-array>
 
     <string-array name="didStuffToday">
@@ -109,6 +142,16 @@
         <item>gefurzt</item>
     </string-array>
 
+    <string-array name="nameFourTemplates">
+        <item>$$ muss vier [W1] nennen oder zwei Schlücke trinken.</item>
+        <item>$$ muss vier [W1] nennen oder drei Schlücke trinken.</item>
+        <item>$$ muss vier [W1] nennen oder vier Schlücke trinken.</item>
+        <item>$$ verteilt zwei Schlücke, wenn er vier [W1] nennen kann.</item>
+        <item>$$ verteilt drei Schlücke, wenn er vier [W1] nennen kann.</item>
+        <item>$$ verteilt vier Schlücke, wenn er vier [W1] nennen kann.</item>
+        <item>$$ verteilt fünf Schlücke, wenn er vier [W1] nennen kann.</item>
+    </string-array>
+
     <string-array name="nameFour">
         <item>Billy Talent Songs</item>
         <item>Nirvana Songs</item>
@@ -118,11 +161,19 @@
         <item>Game of Thrones Charaktere</item>
         <item>South Park Charaktere</item>
         <item>Green Day Songs</item>
+        <item>Simpsons Nebencharaktere</item>
+        <item>Harry Potter Nebencharaktere</item>
+        <item>Star Wars Nebencharaktere</item>
     </string-array>
 
     <string-array name="nameFourNsfw">
         <item>Pornokategorien</item>
         <item>Pornodarstellerinnen</item>
+    </string-array>
+
+    <string-array name="noLikeTemplates">
+        <item>Alle Personen die [W1] mögen trinken einen Schluck.</item>
+        <item>Alle Personen die [W1] mögen trinken zwei Schlücke.</item>
     </string-array>
 
     <string-array name="noLike">
@@ -139,12 +190,66 @@
         <item>kein LSD</item>
     </string-array>
 
-    <string-array name="splitFour">
-        <item>Personen ohne Bart</item>
-        <item>Personen mit Bart</item>
-        <item>blonden Personen</item>
-        <item>nicht blonden Personen</item>
-        <item>Personen mit Kopfbedeckung</item>
-        <item>Personen mit Brille</item>
+    <string-array name="getPhysicalTemplates">
+        <item>$$ muss zwanzig Sekunden [W1] oder einen Schluck trinken.</item>
+        <item>$$ muss fünfzehn Sekunden [W1] oder zwei Schlücke trinken.</item>
+        <item>$$ muss zehn Sekunden [W1] oder austrinken.</item>
+    </string-array>
+
+    <string-array name="getPhysical">
+        <item>auf dem linken Bein stehen</item>
+        <item>auf dem rechten Bein stehen</item>
+        <item>auf der Stelle Hüpfen</item>
+        <item>im Kreis laufen</item>
+        <item>den Kopf schütteln</item>
+    </string-array>
+
+    <string-array name="getPhysicalNsfw">
+        <item>moonwalken</item>
+    </string-array>
+
+    <string-array name="ttTemplates">
+        <item>$$ sagt fehlerfrei "[W1]" oder trinkt drei Schlücke.</item>
+        <item>$$ sagt fehlerfrei "[W1]" oder trinkt vier Schlücke.</item>
+        <item>$$ verteilt drei Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
+        <item>$$ verteilt vier Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
+        <item>$$ verteilt fünf Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
+        <item>$$ verteilt sechs Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
+    </string-array>
+
+    <string-array name="tt">
+        <item>Am Ammersee aßen achtzig Afrikaner alle Abend appetitliche Ananas.</item>
+        <item>Amerikaner kamen nach Kamenz um Carmen zu umarmen.</item>
+        <item>Auf dem Rasen rasen Hasen, atmen rasselnd durch die Nasen.</item>
+        <item>Lang schwang der Klang am Hang entlang.</item>
+        <item>Bierbrauer Bauer braut braunes Bier, braunes Bier braut Bierbrauer Bauer.</item>
+        <item>Bürsten mit schwarzen Borsten bürsten besser als Bürsten mit blauen Borsten.</item>
+        <item>Wenn der Benz bremst, brennt das Benzbremslicht.</item>
+        <item>Das Weinfass, das Frau Weber leerte, verheerte ihre Leberwerte.</item>
+        <item>Fips mixt Fixmixdrinks, fix mixt Fips Fixmixdrinks</item>
+        <item>Gibst Du dem Opi Opium, bringt Opium den Opi um.</item>
+        <item>Rasent rasantes Rumpelstielschen ruppelt Rolos rauf und runter.</item>
+    </string-array>
+
+    <string-array name="ttNsfw">
+        <item>Im dichten Fichtendickicht nicken dicke Fichten tüchtig.</item>
+    </string-array>
+
+    <string-array name="boringTemplates">
+        <item>$$ trinkt einen Schluck.</item>
+        <item>$$ trinkt [W1] Schlücke.</item>
+        <item>$$ verteilt [W1] Schlücke.</item>
+        <item>$$ verteilt fünf Schlücke.</item>
+        <item>$$ verteilt sechs Schlücke.</item>
+    </string-array>
+
+    <string-array name="boring">
+        <item>zwei</item>
+        <item>drei</item>
+        <item>vier</item>
+    </string-array>
+
+    <string-array name="boringNsfw">
+        <item>sieben</item>
     </string-array>
 </resources>

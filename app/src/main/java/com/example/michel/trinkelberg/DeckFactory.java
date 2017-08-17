@@ -58,7 +58,17 @@ class DeckFactory {
         ArrayList<Card> cards = new ArrayList<>();
 
         cards.add(new Card("$$ muss die Mutter jedes Spielers beleidigen oder sein Glas leeren.", 3, new ArrayList<Option>()));
-        cards.add(generateSocialCard());
+        for(int i = 0; i < 4; i++) {
+            this.generateCard(R.array.scremMeTemplates, R.array.screamMe, R.array.screamMeNsfw);
+            this.generateCard(R.array.groupsTemplates, R.array.groups, R.array.groupsNsfw);
+            this.generateCard(R.array.threeQuoteChallengeTemplates, R.array.threeQuoteChallenge, R.array.threeQuoteChallengeNSFW);
+            this.generateCard(R.array.didStuffTodayTemplates, R.array.didStuffToday, R.array.didStuffTodayNsfw);
+            this.generateCard(R.array.nameFourTemplates, R.array.nameFour, R.array.nameFourNsfw);
+            this.generateCard(R.array.noLikeTemplates, R.array.noLike, R.array.noLikeNsfw);
+            this.generateCard(R.array.getPhysicalTemplates, R.array.getPhysical, R.array.getPhysicalNsfw);
+            this.generateCard(R.array.ttTemplates, R.array.tt, R.array.ttNsfw);
+            this.generateCard(R.array.boringTemplates, R.array.boring, R.array.boringNsfw);
+        }
 
         ArrayList<Card> deck = new ArrayList<>();
         for (Card card : cards) {
