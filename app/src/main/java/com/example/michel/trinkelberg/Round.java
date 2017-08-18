@@ -24,6 +24,10 @@ class Round {
             }
         }
 
+        if(playersToChooseFrom.isEmpty()) {
+            playersToChooseFrom = this.players;
+        }
+
         return playersToChooseFrom.get(new Random().nextInt(playersToChooseFrom.size()));
     }
 

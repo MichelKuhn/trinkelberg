@@ -3,7 +3,6 @@ package com.example.michel.trinkelberg;
 
 import android.content.Context;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -50,39 +49,27 @@ class DeckFactory {
     }
 
     ArrayList<Card> createDeck() {
-        ArrayList<Option> nsfw = new ArrayList<>();
-        nsfw.add(Option.NSFW);
-        ArrayList<Option> hetero = new ArrayList<>();
-        hetero.add(Option.HETERO);
-
         ArrayList<Card> cards = new ArrayList<>();
 
         cards.add(new Card("$$ muss die Mutter jedes Spielers beleidigen oder sein Glas leeren.", 3, new ArrayList<Option>()));
         for(int i = 0; i < 4; i++) {
-            this.generateCard(R.array.scremMeTemplates, R.array.screamMe, R.array.screamMeNsfw);
-            this.generateCard(R.array.groupsTemplates, R.array.groups, R.array.groupsNsfw);
-            this.generateCard(R.array.threeQuoteChallengeTemplates, R.array.threeQuoteChallenge, R.array.threeQuoteChallengeNSFW);
-            this.generateCard(R.array.didStuffTodayTemplates, R.array.didStuffToday, R.array.didStuffTodayNsfw);
-            this.generateCard(R.array.nameFourTemplates, R.array.nameFour, R.array.nameFourNsfw);
-            this.generateCard(R.array.noLikeTemplates, R.array.noLike, R.array.noLikeNsfw);
-            this.generateCard(R.array.getPhysicalTemplates, R.array.getPhysical, R.array.getPhysicalNsfw);
-            this.generateCard(R.array.ttTemplates, R.array.tt, R.array.ttNsfw);
-            this.generateCard(R.array.boringTemplates, R.array.boring, R.array.boringNsfw);
-        }
-
-        ArrayList<Card> deck = new ArrayList<>();
-        for (Card card : cards) {
-            if(card.checkOptions(options)) {
-                deck.add(card);
-            }
+            cards.add(this.generateCard(R.array.scremMeTemplates, R.array.screamMe, R.array.screamMeNsfw));
+            cards.add(this.generateCard(R.array.groupsTemplates, R.array.groups, R.array.groupsNsfw));
+            cards.add(this.generateCard(R.array.threeQuoteChallengeTemplates, R.array.threeQuoteChallenge, R.array.threeQuoteChallengeNSFW));
+            cards.add(this.generateCard(R.array.didStuffTodayTemplates, R.array.didStuffToday, R.array.didStuffTodayNsfw));
+            cards.add(this.generateCard(R.array.nameFourTemplates, R.array.nameFour, R.array.nameFourNsfw));
+            cards.add(this.generateCard(R.array.noLikeTemplates, R.array.noLike, R.array.noLikeNsfw));
+            cards.add(this.generateCard(R.array.getPhysicalTemplates, R.array.getPhysical, R.array.getPhysicalNsfw));
+            cards.add(this.generateCard(R.array.ttTemplates, R.array.tt, R.array.ttNsfw));
+            cards.add(this.generateCard(R.array.boringTemplates, R.array.boring, R.array.boringNsfw));
         }
 
         if(options.contains(Option.SOCIALMEDIA)) {
             for(int i = 0; i < 6; i++) {
-                deck.add(generateSocialCard());
+                cards.add(generateSocialCard());
             }
         }
 
-        return deck;
+        return cards;
     }
 }

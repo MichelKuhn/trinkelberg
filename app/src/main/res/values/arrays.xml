@@ -22,6 +22,8 @@
         <item>Pferdekopf</item>
         <item>Trinkelberg</item>
         <item>Dinkelberg</item>
+        <item>Hausmeister</item>
+        <item>Geldsack</item>
     </string-array>
 
     <string-array name="socialMediaNsfw">
@@ -40,8 +42,10 @@
     <string-array name="scremMeTemplates">
         <item>$$ trinkt einen Schluck und schreit dann [W1]</item>
         <item>$$ trinkt zwei Schlücke und schreit dann [W1]</item>
+        <item>Jede Person in der Runde trinkt einen Schluck und schreit dann [W1]</item>
         <item>Die Person links von $$ trinkt zwei Schlücke und schreit dann [W1]</item>
         <item>Die Person rechts von $$ trinkt zwei Schlücke und schreit dann [W1]</item>
+        <item>Wer als erste Person [W1] schreit, verteilt drei Schlücke.</item>
     </string-array>
 
     <string-array name="screamMe">
@@ -66,7 +70,6 @@
         <item>Nigga!</item>
         <item>Schwanz!</item>
         <item>Ficken!</item>
-        <item>Arschloch!</item>
     </string-array>
 
     <string-array name="groupsTemplates">
@@ -87,7 +90,9 @@
         <item>Azubis</item>
         <item>Schüler</item>
         <item>Hip-Hop Fans</item>
+        <item>Metalfans</item>
         <item>Hemdträger</item>
+        <item>Orchestermitglieder</item>
     </string-array>
 
     <string-array name="groupsNsfw">
@@ -119,6 +124,8 @@
     <string-array name="threeQuoteChallengeNSFW">
         <item>Trailerpark Song rappen</item>
         <item>KIZ Song rappen</item>
+        <item>Bushido Song rappen</item>
+        <item>Haftbefehl Song rappen</item>
     </string-array>
 
     <string-array name="didStuffTodayTemplates">
@@ -134,6 +141,9 @@
         <item>Red Bull getrunken</item>
         <item>Fanta getrunken</item>
         <item>Sprite getrunken</item>
+        <item>Chips gegessen</item>
+        <item>Schokolade gegessen</item>
+        <item>Erdnüsse gegessen</item>
     </string-array>
 
     <string-array name="didStuffTodayNsfw">
@@ -211,10 +221,10 @@
     <string-array name="ttTemplates">
         <item>$$ sagt fehlerfrei "[W1]" oder trinkt drei Schlücke.</item>
         <item>$$ sagt fehlerfrei "[W1]" oder trinkt vier Schlücke.</item>
-        <item>$$ verteilt drei Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
-        <item>$$ verteilt vier Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
-        <item>$$ verteilt fünf Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
-        <item>$$ verteilt sechs Schlücke, wenn er fehlerfrei "[W1]" sagen kann.</item>
+        <item>$$ verteilt drei Schlücke, wenn er fehlerfrei \"[W1]\" sagen kann.</item>
+        <item>$$ verteilt vier Schlücke, wenn er fehlerfrei \"[W1]\" sagen kann.</item>
+        <item>$$ verteilt fünf Schlücke, wenn er fehlerfrei \"[W1]\" sagen kann.</item>
+        <item>$$ verteilt sechs Schlücke, wenn er fehlerfrei \"[W1]\" sagen kann.</item>
     </string-array>
 
     <string-array name="tt">
@@ -228,7 +238,7 @@
         <item>Das Weinfass, das Frau Weber leerte, verheerte ihre Leberwerte.</item>
         <item>Fips mixt Fixmixdrinks, fix mixt Fips Fixmixdrinks</item>
         <item>Gibst Du dem Opi Opium, bringt Opium den Opi um.</item>
-        <item>Rasent rasantes Rumpelstielschen ruppelt Rolos rauf und runter.</item>
+        <item>Rasend rasantes Rumpelstielzchen ruppelt Rolos rauf und runter.</item>
     </string-array>
 
     <string-array name="ttNsfw">
